@@ -1,8 +1,8 @@
 import React from 'react'
 import {pureOnBlur} from '../GreetingContainer'
 
-let name: any
-let error: any
+let name: string
+let error: string
 const setError = (a: any) => {
     error = a
 }
@@ -20,10 +20,10 @@ test('name 1', () => {
 test('name 2', () => {
     name = ''
     pureOnBlur(name, setError)
-    expect(error).toBe('Ошибка! Введите имя!')
+    expect(error).toBe('Name is required!')
 })
 test('name 3', () => {
     name = '    '
     pureOnBlur(name, setError)
-    expect(error).toBe('Ошибка! Введите имя!')
+    expect(error).toBe('Name is required!')
 })

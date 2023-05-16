@@ -63,7 +63,7 @@ const Greeting: React.FC<GreetingPropsType> = (
 
             {lastUserName && (
                 <div className={s.greeting}>
-                    Привет <span id={'hw3-last-user'}>{lastUserName}</span>!
+                    Hello <span id={'hw3-last-user'}>{lastUserName}</span>!
                 </div>
             )}
         </div>

@@ -1,4 +1,3 @@
-import React from 'react'
 import {pureOnEnter} from '../GreetingContainer'
 
 let added: any

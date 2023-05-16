@@ -36,7 +36,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
     const [error, setError] = useState<string>('');
 
     const setNameCallback = (event: ChangeEvent<HTMLInputElement>) => {
-        const trimmedName = event.currentTarget.value.trim();
+        const trimmedName = event.currentTarget.value;
         if (trimmedName) {
             setName(trimmedName);
             error && setError('');
